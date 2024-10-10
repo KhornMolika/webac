@@ -79,18 +79,18 @@
 				<div class="mb-3 form-card ">
 					<h1 style="color: red;">Sign-in</h2>
 				  <label for="exampleInputEmail1" class="form-label" >Email address</label>
-				  <input type="email" class="form-control w-75" id="exampleInputEmail1" placeholder="Email address" aria-describedby="emailHelp">
+				  <input type="email" class="form-control w-75" id="email" placeholder="Email address" aria-describedby="emailHelp" >
 				 
 				</div>
 				<div class="mb-3">
 				  <label for="exampleInputPassword1" class="form-label">Password</label>
-				  <input type="password" class="form-control w-75" id="exampleInputPassword1" placeholder="Password">
+				  <input type="password" class="form-control w-75" id="password" placeholder="Password">
 				</div>
 				<div class="mb-3 form-check">
 				  <input type="checkbox" class="form-check-input" id="exampleCheck1">
 				  <label class="form-check-label " for="exampleCheck1">Check me out</label>
 				</div>
-				<button type="submit" class="btn  " id="submit">Submit</button>
+				<button type="button" class="btn" onclick="show_data()" id="submit">Submit</button>
 			  </form>
 		</div>	
 			
@@ -138,4 +138,26 @@
 
 	
 	</body>
+	<script>
+	
+	
+		function show_data(){
+			var email =document.getElementById("email").value;
+			var password =document.getElementById("password").value;
+			if(email==""){
+				alert("Please Input the Email")
+			}
+			if(password==""){
+			alert("Please Input The Password")
+			}
+		console.log("Email :" + email);
+		console.log("Password :" + password);
+		document.getElementById("email").value = '';
+		document.getElementById("password").value = '';
+		
+		}
+		
+		
+		
+	</script>
 </html>
