@@ -26,7 +26,13 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 		/>
 		<link rel="stylesheet" href="/css/faq.css" />
-	</head>
+		
+		   <!-- Colorbox CSS -->
+		   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-colorbox/1.6.4/example1/colorbox.min.css">
+	   
+		   <!-- jQuery -->
+		   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	   
 	<body>
 		<nav class="navbar navbar-expand-xl">
 			<div class="container">
@@ -171,19 +177,27 @@
 			<br>
 			<br>
 			
-			
+			 
 			<font style="font-family: Algerian; font-size: 100px;"><center>
 				Team
-			</center></font>
+			</center>
+			</font>
 			<div class="row d-flex justify-content-center">
-				<div class="col-xl-4 ">
-					<img src="" alt="">
+				<div class="col-xl-4 profile ">
+					<a href="/img/hour-removebg-preview.png " class="link1">
+						<img src="/img/hour-removebg-preview.png" alt="" >
+					</a>
 				</div>
-				<div class="col-xl-4">
-					<img src="/img/photo_2023-11-23_07-36-44_copy-removebg-preview.png" alt="">
+				<div class="col-xl-4 profile">
+					<a href="/img/photo_2023-11-23_07-36-44_copy-removebg-preview.png" title="Kim chan Tharo 5947" class="link1">
+						<img src="/img/photo_2023-11-23_07-36-44_copy-removebg-preview.png" alt="">
+					</a>
+					
 				</div>
-				<div class="col-xl-4">
-					<img src="" alt="">
+				<div class="col-xl-4 profile">
+					<a href="/img/rith2.png" class="link1">
+						<img src="/img/rith2.png" alt="">
+					</a>
 				</div>
 			</div>
 			
@@ -211,4 +225,13 @@
         </span>
         </div>
 	</body>
+
+	<script>
+	  $(document).ready(function () {
+
+$(".profile img").colorbox();
+
+});
+$(".link1").colorbox({ transition:"none", width:"75%", height:"75%"});
+	</script>
 </html>

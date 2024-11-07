@@ -187,3 +187,20 @@ transform: scale(1.1);
 .btn-dark{
     margin-left: 40px;
 }
+.search-input{
+    /* width: 300px; */
+    border-radius: 4px;
+   padding: 10px;
+   
+    z-index: 10;
+}
+
+.search-input{
+    display: none;
+}
+.btn-search{
+    background-color: #ccc;
+}
+.btn-search:hover{
+  background-color: white;
+}

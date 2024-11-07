@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="/css/home.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   
 </head>
 <body>
     <nav class="navbar navbar-expand-xl ">
@@ -43,8 +44,13 @@
                 
                 <li class="nav-item nav-home">
                     <i class="fa-solid fa-magnifying-glass"></i>
-                    <a class="nav-link active" href="/html/search.html" id="link">Search</a>
+                    <button class="btn-search border-0 ">Search</button>
+                    <input type="text" class="search-input" placeholder="Search here...">
                 </li>
+                <div class="search-input" style="display: none; z-index: 10;">
+                   
+                </div>
+                
                 <li class="nav-item nav-home">
                     <i class="fa-regular fa-user"></i>
                     <a class="nav-link active" href="/html/login.html" id="link">Login</a>
@@ -82,10 +88,10 @@
         <br>
         
         <div class="m-4   text-danger" style="text-align: center;">Sign in now to save your watch history.</div>
-        <span class="mat-button-wrapper ms-5 lastest  text-danger">Lastest Update <b>></b></span>
+        <span class="mat-button-wrapper ms-4 lastest  text-danger">&nbsp;&nbsp;&nbsp;Lastest Update <b>></b></span>
         <br>
         <br>
-       
+      
         <div class="container-fluid mt-4">
             <div class="row mt-4">
                 <!-- Large Column on Large Screens -->
@@ -115,7 +121,7 @@
                         <a href="https://kisskh.co/Drama/Lovely-Runner?id=8792"><img src="/img/pic5.webp" class="card-img-top" alt="Card Image 2"></a>
                         
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama1</p>
                             <p class="card-text ms-4">Ep 16</p>
                         </div>
                     </div>
@@ -168,7 +174,7 @@
                     <div class="card">
                         <img src="/img/pic11.avif" class="card-img-top" alt="Card Image 1">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text  me-1">Lovely runner</p>
+                            <p class="card-text  me-1">K-drama1</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -177,7 +183,7 @@
                     <div class="card">
                         <img src="/img/pic12.avif" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama2</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -186,7 +192,7 @@
                     <div class="card">
                         <img src="/img/pic13.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama3</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -195,7 +201,7 @@
                     <div class="card">
                         <img src="/img/pic14.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama4</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -204,7 +210,7 @@
                     <div class="card">
                         <img src="/img/pic15.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1 ">Lovely runner</p>
+                            <p class="card-text me-1 ">K-drama5</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -217,7 +223,7 @@
                     <div class="card">
                         <img src="/img/pic16.jpg" class="card-img-top" alt="Card Image Large">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama6</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -227,7 +233,7 @@
                     <div class="card">
                         <img src="/img/pic17.jpg" class="card-img-top" alt="Card Image 1">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text  me-1">Lovely runner</p>
+                            <p class="card-text  me-1">K-drama7</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -236,7 +242,7 @@
                     <div class="card">
                         <img src="/img/pic18.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama8</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -245,7 +251,7 @@
                     <div class="card">
                         <img src="/img/pic19.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama9</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -254,7 +260,7 @@
                     <div class="card">
                         <img src="/img/pic30.avif" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama10</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -263,12 +269,12 @@
                     <div class="card">
                         <img src="/img/pic31.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1 ">Lovely runner</p>
+                            <p class="card-text me-1 ">K-drama11</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
                 </div>
-                <!-- Add more columns as needed -->
+               
             </div>
             <div class="row mt-4">
                 <!-- Large Column on Large Screens -->
@@ -276,7 +282,7 @@
                     <div class="card">
                         <img src="/img/pic32.jpg" class="card-img-top" alt="Card Image Large">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama12</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -286,7 +292,7 @@
                     <div class="card">
                         <img src="/img/pic34.webp" class="card-img-top" alt="Card Image 1">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text  me-1">Lovely runner</p>
+                            <p class="card-text  me-1">K-drama13</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -295,7 +301,7 @@
                     <div class="card">
                         <img src="/img/pic35.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama14</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -304,7 +310,7 @@
                     <div class="card">
                         <img src="/img/pic37.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama15</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -313,7 +319,7 @@
                     <div class="card">
                         <img src="/img/pic38.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama16</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -322,7 +328,7 @@
                     <div class="card">
                         <img src="/img/pic39.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1 ">Lovely runner</p>
+                            <p class="card-text me-1 ">K-drama17</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -335,7 +341,7 @@
                     <div class="card">
                         <img src="/img/pic40.avif" class="card-img-top" alt="Card Image Large">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama18</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -345,7 +351,7 @@
                     <div class="card">
                         <img src="/img/pic41.webp" class="card-img-top" alt="Card Image 1">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text  me-1">Lovely runner</p>
+                            <p class="card-text  me-1">K-drama19</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -354,7 +360,7 @@
                     <div class="card">
                         <img src="/img/pic42.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama20</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -363,7 +369,7 @@
                     <div class="card">
                         <img src="/img/pic43.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama21</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -372,7 +378,7 @@
                     <div class="card">
                         <img src="/img/pic44.jpg" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1">Lovely runner</p>
+                            <p class="card-text me-1">K-drama22</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -381,7 +387,7 @@
                     <div class="card">
                         <img src="/img/pic45.webp" class="card-img-top" alt="Card Image 2">
                         <div class="card-body d-flex justify-content-between">
-                            <p class="card-text me-1 ">Lovely runner</p>
+                            <p class="card-text me-1 ">K-drama23</p>
                             <p class="card-text ms-4">Ep 6</p>
                         </div>
                     </div>
@@ -443,17 +449,42 @@
 <script>
     // window.alert("Hi lok kru My name is Kim chan tharo hav fred");
     // Bye Lok kru
-    function myFunction1(){
-            document.getElementById("darkmode").style.backgroundColor = "black";
+ 
+var active = 1;
+
+// jQuery code to toggle search input on button click
+$(document).on("click", ".btn-search", function () {
+    $(".search-input").slideToggle(800); // Slide the search input up and down
+    if(active == 1){
+      
+  
+        active = 0;
+    } else {
+        // Change button text back to 'Show'
+        active = 1;
+    }
+});
+  //search product 
+  var allProduct = document.querySelectorAll(".box-shadow");
+    // console.log(allProduct)
+    $(document).on("input",'.search-input', function () {
+        let searchValue = $(this).val();
+
+        for(let i=0;i<allProduct.length;i++){
+            //product title
+            let title = allProduct[i].querySelector(".card-text").textContent.toLowerCase().replace(/\s+/g, '');
+
+            if(title.includes(searchValue.toLowerCase().replace(/\s+/g, '') )){
+                allProduct[i].style.display = "inline";
+            }else{
+                allProduct[i].style.display = "none";
+            }
         }
-        // function myFunction2(){
-        //     document.getElementById("whitemode").style.backgroundColor = "white";
-        // }
-        function resetStyle() {
-     document.getElementById("darkmode").style.backgroundColor = "white";
-   
-}
+        
+    });
 </script>
+
+<script src="/js/home.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
     AOS.init();
